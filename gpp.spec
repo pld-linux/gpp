@@ -1,28 +1,16 @@
-#
-#
 Summary:	GPP - Generic Preprocesor
-Summary(pl):	GPP - 
+Summary(pl):	GPP - ogólny preprocesor
 Name:		gpp
 Version:	2.24
 Release:	0.1
-Epoch:		0
 License:	GPL
-Vendor:		PLD
-Group:		Compilers
+Group:		Development/Languages
 Source0:	http://www.nothingisreal.com/gpp/%{name}-%{version}.tar.bz2
 # Source0-md5:	f04c2a23312ab3d0c462c7972d1c6aa6
 URL:		http://www.nothingisreal.com/gpp
-#BuildRequires:	-
-#PreReq:		-
-#Requires(pre,post):	-
-#Requires(preun):	-
-#Requires(postun):	-
-#Requires:	-
-#Provides:	-
-#Obsoletes:	-
-#Conflicts:	-
-#BuildArch:	noarch
-#ExclusiveArch:	%{ix86}
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -34,6 +22,13 @@ flexible than that of GNU m4. There are built-in macros for use with
 C/C++, LaTeX, HTML, XHTML, and Prolog files.
 
 %description -l pl
+GPP jest preprocesorem ogólnego przeznaczenia z dostosowywaln±
+sk³adni±, przeznaczony do szerokiego zastosowania w zadaniach
+preprocesingu. Jako niezale¿ny od jakichkolwiek jêzyków programowania
+jest znacznie bardziej wszechstronny od preprocesora C (cpp),
+natomiast jego sk³adnia jest l¿ejsza i bardziej elastyczna ni¿ GNU m4.
+Zawiera wbudowane makra do wykorzystania z C/C++, LaTeX, HTML, XHTML i
+plikami Prologu.
 
 %prep
 %setup -q
@@ -56,19 +51,8 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%pre
-
-%post
-
-%preun
-
-%postun
-
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README THANKS TODO
-
 %attr(755,root,root) %{_bindir}/*
-
-#%{_docdir}/%{name}-%{version}/*
 %{_mandir}/man1/*
