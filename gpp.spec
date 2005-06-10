@@ -5,9 +5,9 @@ Version:	2.24
 Release:	0.1
 License:	GPL
 Group:		Development/Languages
-Source0:	http://www.nothingisreal.com/gpp/%{name}-%{version}.tar.bz2
+Source0:	http://nothingisreal.com/gpp/%{name}-%{version}.tar.bz2
 # Source0-md5:	f04c2a23312ab3d0c462c7972d1c6aa6
-URL:		http://www.nothingisreal.com/gpp
+URL:		http://nothingisreal.com/gpp/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -23,7 +23,7 @@ C/C++, LaTeX, HTML, XHTML, and Prolog files.
 
 %description -l pl
 GPP jest preprocesorem ogólnego przeznaczenia z dostosowywaln±
-sk³adni±, przeznaczony do szerokiego zastosowania w zadaniach
+sk³adni±, przeznaczonym do szerokiego zastosowania w zadaniach
 preprocesingu. Jako niezale¿ny od jakichkolwiek jêzyków programowania
 jest znacznie bardziej wszechstronny od preprocesora C (cpp),
 natomiast jego sk³adnia jest l¿ejsza i bardziej elastyczna ni¿ GNU m4.
