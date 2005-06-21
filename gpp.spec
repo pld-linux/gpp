@@ -11,6 +11,8 @@ URL:		http://nothingisreal.com/gpp/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
+Provides:	cpp
+Obsoletes:	cpp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,9 +46,12 @@ plikami Prologu.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/lib
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+ln -sf %{_bindir}/gpp $RPM_BUILD_ROOT/lib/cpp
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -56,3 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README THANKS TODO
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
+/lib/cpp
