@@ -1,5 +1,5 @@
 Summary:	GPP - Generic Preprocesor
-Summary(pl):	GPP - ogÛlny preprocesor
+Summary(pl.UTF-8):   GPP - og√≥lny preprocesor
 Name:		gpp
 Version:	2.24
 Release:	0.1
@@ -23,12 +23,12 @@ the C preprocessor (cpp), while its syntax is lighter and more
 flexible than that of GNU m4. There are built-in macros for use with
 C/C++, LaTeX, HTML, XHTML, and Prolog files.
 
-%description -l pl
-GPP jest preprocesorem ogÛlnego przeznaczenia z dostosowywaln±
-sk≥adni±, przeznaczonym do szerokiego zastosowania w zadaniach
-preprocesingu. Jako niezaleøny od jakichkolwiek jÍzykÛw programowania
+%description -l pl.UTF-8
+GPP jest preprocesorem og√≥lnego przeznaczenia z dostosowywalnƒÖ
+sk≈ÇadniƒÖ, przeznaczonym do szerokiego zastosowania w zadaniach
+preprocesingu. Jako niezale≈ºny od jakichkolwiek jƒôzyk√≥w programowania
 jest znacznie bardziej wszechstronny od preprocesora C (cpp),
-natomiast jego sk≥adnia jest løejsza i bardziej elastyczna niø GNU m4.
+natomiast jego sk≈Çadnia jest l≈ºejsza i bardziej elastyczna ni≈º GNU m4.
 Zawiera wbudowane makra do wykorzystania z C/C++, LaTeX, HTML, XHTML i
 plikami Prologu.
 
