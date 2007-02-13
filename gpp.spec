@@ -1,5 +1,5 @@
 Summary:	GPP - Generic Preprocesor
-Summary(pl.UTF-8):   GPP - ogólny preprocesor
+Summary(pl.UTF-8):	GPP - ogólny preprocesor
 Name:		gpp
 Version:	2.24
 Release:	0.1
